@@ -22,6 +22,4 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Build App
-        uses: docker-compose -f docker-compose.yml up --abort-on-container-exit
-
-
+        uses: make test
